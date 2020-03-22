@@ -18,7 +18,7 @@ class SpringdatajpaPracticeApplicationTests {
 
 
     @Test
-    public void save(){//fixme 有bug,执行成功但没有插入到db
+    public void save(){//fixme 有bug,执行成功但没有插入到db. 当末尾添加查询语句时则插入成功
         repository.save(new Customer("Jack", "Bauer"));
         repository.save(new Customer("Chloe", "O'Brian"));
         repository.save(new Customer("Kim", "Bauer"));
